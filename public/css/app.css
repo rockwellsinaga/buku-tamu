@@ -1,0 +1,35 @@
+:root {
+    --brand: #0f5d46;
+    --brand-dark: #093c2f;
+    --surface: #f4f7f5;
+    --ink: #17332a;
+}
+
+body { min-height: 100vh; color: var(--ink); background: var(--surface); }
+.app-navbar { background: var(--brand-dark); }
+.navbar-brand small { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; opacity: .75; }
+.hero-section { background: radial-gradient(circle at 85% 20%, #f3d99f 0, transparent 27%), linear-gradient(135deg, #eff8f3, #fffaf0); }
+.py-lg-6 { padding-top: 6rem !important; padding-bottom: 6rem !important; }
+.eyebrow { color: var(--brand); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.hero-mark { display: grid; place-items: center; width: 260px; height: 260px; border-radius: 42% 58% 58% 42% / 48% 42% 58% 52%; background: rgba(255, 255, 255, .78); box-shadow: 0 25px 65px rgba(9, 60, 47, .14); }
+.hero-mark img { width: 135px; }
+.event-card { overflow: hidden; border: 1px solid rgba(15, 93, 70, .12); border-radius: 1.25rem; background: #fff; box-shadow: 0 16px 45px rgba(23, 51, 42, .08); transition: transform .2s ease, box-shadow .2s ease; }
+.event-card:hover { transform: translateY(-4px); box-shadow: 0 20px 55px rgba(23, 51, 42, .13); }
+.event-image { width: 100%; height: 220px; object-fit: cover; background: #e8efeb; }
+.btn-primary { --bs-btn-bg: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: var(--brand-dark); --bs-btn-hover-border-color: var(--brand-dark); }
+.btn-outline-primary { --bs-btn-color: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: var(--brand); --bs-btn-hover-border-color: var(--brand); }
+.form-shell { max-width: 820px; }
+.form-shell-wide { max-width: 1080px; }
+.form-card { padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid rgba(15, 93, 70, .12); border-radius: 1.25rem; background: #fff; box-shadow: 0 18px 55px rgba(23, 51, 42, .09); }
+.form-label { font-weight: 650; }
+.form-control, .form-select { min-height: 48px; border-color: #cbd9d3; }
+.form-control:focus, .form-select:focus { border-color: var(--brand); box-shadow: 0 0 0 .25rem rgba(15, 93, 70, .13); }
+.back-link { color: var(--brand); font-weight: 700; text-decoration: none; }
+.back-link:hover { color: var(--brand-dark); }
+
+@media (max-width: 575.98px) {
+    .navbar-brand small { display: none !important; }
+    .hero-mark { width: 190px; height: 190px; }
+    .hero-mark img { width: 100px; }
+    .event-image { height: 190px; }
+}
